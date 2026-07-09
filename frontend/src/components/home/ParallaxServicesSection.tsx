@@ -173,7 +173,7 @@ export function ParallaxServicesSection() {
         </ScrollReveal>
 
         <div className="scroll-parallax-section">
-          <h1 className="parallax-page__title">#EXPLORE</h1>
+          <h1 className="parallax-page__title"></h1>
           <ParallaxArrow />
           <div className="parallax-content parallax-content--alternate parallax-content--padded">
             {dynamicServices.map((service, index) => (

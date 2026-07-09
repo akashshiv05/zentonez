@@ -272,6 +272,13 @@ const AdminPromotions: React.FC = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
 
+                <div className="space-y-2 md:col-span-2">
+                  <label className="text-xs font-bold text-on-surface/60 uppercase tracking-wider block">Offer Title (Static)</label>
+                  <div className="w-full bg-background/50 border border-white/5 rounded-xl px-4 py-3 text-on-surface/80 font-medium">
+                    {currentPromo.titlePart1} {currentPromo.titlePart2} {currentPromo.offerTitle ? `(${currentPromo.offerTitle})` : ''}
+                  </div>
+                </div>
+
                 <div className="grid grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <label className="text-xs font-bold text-on-surface/60 uppercase tracking-wider">Discount Value</label>
@@ -385,6 +392,11 @@ const AdminPromotions: React.FC = () => {
                       >
                         {promo.isActive ? 'Active' : 'Set Active'}
                       </button>
+                    </div>
+
+                    <div className="pt-2">
+                      <h4 className="text-sm font-bold text-on-surface uppercase tracking-wider">{promo.titlePart1} {promo.titlePart2}</h4>
+                      {promo.offerTitle && <p className="text-xs text-primary/80 font-medium mt-0.5">{promo.offerTitle}</p>}
                     </div>
 
                     <div className="flex justify-between items-center pt-4 border-t border-white/5">

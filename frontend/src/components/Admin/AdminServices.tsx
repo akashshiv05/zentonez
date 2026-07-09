@@ -154,12 +154,6 @@ const AdminServices: React.FC = () => {
             <h2 className="text-xl font-bold text-on-surface">Manage Services</h2>
             <p className="text-sm text-on-surface/60 mt-1">Update services offered in your salon.</p>
           </div>
-          <button 
-            onClick={handleAddNew}
-            className="px-6 py-3 bg-primary text-background font-black uppercase tracking-widest text-xs rounded-xl hover:opacity-90 transition-opacity"
-          >
-            Add New Service
-          </button>
         </div>
 
         <AnimatePresence mode="wait">
